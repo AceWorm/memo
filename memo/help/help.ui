@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpInfo</class>
+ <widget class="QDialog" name="HelpInfo">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>259</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>帮助</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>3</y>
+     <width>385</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox#groupBox{
+border-width: 1px;
+border-style: solid;
+border-color: rgb(0, 170, 255);
+margin-top: 5px;
+}
+
+QGroupBox#groupBox::title{
+subcontrol-origin: margin;
+subcontrol-position: top left;
+left: 10px;
+color: rgb(0, 170, 255);
+}
+
+QLabel#label{
+color: rgb(0, 85, 127);
+}
+</string>
+   </property>
+   <property name="title">
+    <string>快捷键</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>24</y>
+      <width>371</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全选：Ctrl+A           复制：Ctrl+C
+剪切：Ctrl+X           粘贴：Ctrl+V
+保存：Ctrl+S           重做：Ctrl+Y
+撤消：Ctrl+Z
+
+显示：Ctrl+F12         设置：Ctrl+F11
+隐藏：Esc / Alt+F4     退出：Ctrl+F4
+
+截屏：Ctrl+Alt+S       取消截屏：Esc
+确认截屏：按Enter / 单击鼠标右键 / 双击选中区域
+
+[小提示]：截屏图片保存在剪切板里，可以直接粘贴到备忘区光标处。</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="mailLabel">
+   <property name="geometry">
+    <rect>
+     <x>333</x>
+     <y>239</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;a href=&quot;Mailto:civen163@163.com?&amp;Subject=【重要】关于功能改进！&amp;Body=Hi，你好！&lt;/br&gt;我有一个奇妙的想法想和你探讨一下：&quot;&gt;意见反馈&lt;/a&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
